@@ -4,12 +4,14 @@ Endpoint:
 
 https://{{workspace}}--{{accountId}}.myvtex.com/_v/data-delete
 
-Expected Request Body
+Expected Request Body:
 
+```json
 {
     "clientEmail": "{{clientEmail}}",
     "accountId": "{{accountId}}",
     "requesterEmail": "{{requesterEmail}}"
 }
+```
 
 
