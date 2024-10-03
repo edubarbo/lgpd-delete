@@ -40,7 +40,7 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "licensemanager.vtex.com.br",
+        "host": "{{account}}.vtexcommercestable.com.br",
         "path": "/api/pvt/accounts/*"
       }
     },
@@ -62,6 +62,16 @@
     },
     {
       "name": "vbase-read-write"
+    },
+    {
+      "name": "Get_Account_By_Identifier"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/license-manager/*"
+      }
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

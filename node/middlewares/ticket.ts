@@ -1,6 +1,7 @@
 export async function ticket (ctx: Context, next: () => Promise<any>) {
   const {
-    state: { body }
+    state: { body },
+    clients: { LMClient}
   } = ctx
 
   const { clientEmail, accountId, requesterEmail } = body;
@@ -10,6 +11,10 @@ export async function ticket (ctx: Context, next: () => Promise<any>) {
   console.log (requesterEmail)
 
   console.info('Received ticket:', body)
+
+  const teste = await  LMClient.validateAccount(accountId)
+
+  console.log (teste)
 
   await next()
 }
